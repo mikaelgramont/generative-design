@@ -1,31 +1,33 @@
 <html>
-	<head></head>
+	<head>
+        <style>
+            body {
+                background: #eee;
+            }
+            main {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            canvas {
+                outline: 1px solid #333;
+                display: block;
+                margin: 0 auto;
+            }
+            .wrapper {
+                width: 400px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
 	<body>
-		<style>
-			body {
-				background: #eee;
-			}
-			main {
-				height: 100%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-			canvas {
-				outline: 1px solid #333;
-				display: block;
-				margin: 0 auto;
-			}
-			.wrapper {
-				width: 400px;
-				margin: 0 auto;
-			}
-		</style>
 		<div class="wrapper">
   			<canvas id="my-canvas" width="400" height="400"></canvas>
-			<label>Iterations<input type="range" min="1" max="200" value="20" id="iterations"/></label>
-			<label>Angle<input type="range" min="-360" max="360" value="45" id="angle"/></label>
-			<label>Size<input type="range" min="1" max="400" value="100" id="size"/></label>
+			<label>Iterations<input type="range" min="1" max="2000" value="1730" id="iterations"/></label>
+			<label>Angle<input type="range" min="-360" max="360" value="193" id="angle"/></label>
+			<label>Size<input type="range" min="1" max="400" value="400" id="size"/></label>
+			<label>Offset<input type="range" min="0" max="1.0" value="0.55" step="0.01" id="offset"/></label>
 			<p id="position">0, 0</p>
 		</div>
 		<script src="rectangle.js"></script>
