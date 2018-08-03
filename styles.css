@@ -1,0 +1,29 @@
+body {
+    background: #eee;
+    font-family: arial;
+}
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+fieldset,
+canvas {
+    outline: 1px solid #333;
+    display: block;
+    margin: 0 auto 10px;
+    border: 0;
+}
+.wrapper {
+    width: 400px;
+    margin: 0 auto;
+}
+input[type=range] {
+    width: 100px;
+}
+label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
